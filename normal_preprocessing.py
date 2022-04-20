@@ -1,7 +1,7 @@
 from dataset import read_dataframe, check_head
 import pandas as pd
 import numpy as np
-def preprocessing(df : pd.DataFrame):
+def preprocessing(df : pd.DataFrame) -> pd.DataFrame:
     """
     Processed data for model training:
     Deals with missing values
