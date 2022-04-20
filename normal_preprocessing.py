@@ -15,7 +15,7 @@ def preprocessing(df : pd.DataFrame):
 
     Returns
     -------
-    df
+    pd.DataFrame
         The dataframe after preprocessing
 
     """
