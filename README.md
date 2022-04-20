@@ -10,3 +10,9 @@
 
 ### Reference https://www.kaggle.com/datasets/uciml/german-credit/code
 
+Arguments list:
+  1.fairness : 0 means Normal Preprocessing; 1 means Preprocessing by mitigating the bias
+  2.model_type : {'RF' : Random Forest Classifier, 'LR' : Logistic Regression, 'KNN' : K Nearest Neighbors,
+  >               'DT' : Decision Tree Classifier, 'NB' : GaussianNB, 'SVM' : SVC(gamma = 'auto'), 'XGB' : XGBClassifier }
+  
+
