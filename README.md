@@ -10,6 +10,7 @@
 
 ### Reference https://www.kaggle.com/datasets/uciml/german-credit/code
 
+![](https://github.com/tusharvatsa32/Machine-Learning-Fairness/blob/master/IMG-4150.jpg)
 Arguments list:
   > fairness : 0 means Normal Preprocessing; 1 means Preprocessing by mitigating the bias
   
