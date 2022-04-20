@@ -19,3 +19,11 @@ Arguments list:
   >test_size : The size of the test dataset the user wants to choose
 
   >f_measure : {'ACA' : Anti-Classification Age, 'ACG' : Anti-Classification Gender, 'separation' : Separation measure, 'grpfairness : Group Fairness}
+
+Steps to run:
+ > git clone https://github.com/tusharvatsa32/Machine-Learning-Fairness.git
+ 
+ > cd Machine-Learning-Fairness
+ 
+ > python3 setup.py
+ 
