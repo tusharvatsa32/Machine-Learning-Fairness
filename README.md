@@ -16,4 +16,7 @@ Arguments list:
   > model_type : {'RF' : Random Forest Classifier, 'LR' : Logistic Regression, 'KNN' : K Nearest Neighbors,
   >               'DT' : Decision Tree Classifier, 'NB' : GaussianNB, 'SVM' : SVC(gamma = 'auto'), 'XGB' : XGBClassifier }
   
+  >test_size : The size of the test dataset the user wants to choose
+
+  >f_measure : {'ACA' : Anti-Classification Age, 'ACG' : Anti-Classification Gender, 'separation' : Separation measure, 'grpfairness : Group Fairness}
 
