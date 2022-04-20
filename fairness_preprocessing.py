@@ -1,7 +1,7 @@
 from dataset import read_dataframe, check_head
 import pandas as pd
 import numpy as np
-def preprocessing(df : pd.DataFrame) -> pd.DataFrame:
+def f_preprocessing(df : pd.DataFrame) -> pd.DataFrame:
     """
     Processed data for model training:
     Deals with missing values
@@ -18,12 +18,16 @@ def preprocessing(df : pd.DataFrame) -> pd.DataFrame:
     pd.DataFrame
         The dataframe after preprocessing
 
+    pd.DataFrame
+        The labels dataframe
     """
     df_credit = df
 
     #Change Risk column (target variable) into numerical with 0 and 1 values
     df_y = df[['Risk']]
-    df_y['Risk'] = np.where(df_y.loc[ : , 'Risk']=='good', 0, 1)
+    df_y['Risk'] = np.where(df_y['Risk']=='good', 0, 1)
+    # df_y.loc[df_y["Risk"] == "good","Risk"] = 0
+    # df_y.loc[df_y["Risk"] == "bad","Risk"] = 1
 
     #Forming the dataframe without the target variable
     df_credit = df_credit.drop(["Risk"], axis=1)
@@ -40,8 +44,7 @@ def preprocessing(df : pd.DataFrame) -> pd.DataFrame:
 
     #Concatenating the predictor variables with the labels to form training data
     data_train = pd.concat([df_credit_T, df_y], axis=1)
-    return data_train
-
+    return df_credit_T, df_y
 
 
 def one_hot_encoder(df : pd.DataFrame, nan_as_category : bool) -> pd.DataFrame:
