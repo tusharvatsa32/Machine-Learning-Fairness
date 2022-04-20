@@ -79,11 +79,3 @@ def describe_dataset(dataframe : pd.DataFrame) -> pd.DataFrame:
     return dataframe.describe()
 
 
-if __name__ == "__main__":
-    df = read_dataframe()
-    print(df)
-    print(check_head(df))
-    print(check_info(df))
-    print(check_unique_values(df))
-    print(describe_dataset(df))
-
