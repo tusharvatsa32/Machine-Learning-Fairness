@@ -4,6 +4,10 @@ import shutil
 from shutil import copyfile
 from sys import exit
 
+subprocess.check_call([sys.executable,'-m','pip','install','numpy'])
+subprocess.check_call([sys.executable,'-m','pip','install','pandas'])
+subprocess.check_call([sys.executable,'-m','pip','install','matplotlib'])
 subprocess.check_call([sys.executable,'-m','pip','install','seaborn'])
 subprocess.check_call([sys.executable,'-m','pip','install','plotly'])
 subprocess.check_call([sys.executable,'-m','pip','install','xgboost'])
+subprocess.check_call([sys.executable,'-m','pip','install','sklearn'])
