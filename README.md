@@ -27,3 +27,8 @@ Steps to run:
  
  > python3 setup.py
  
+ For normal processing with XGB model and test_size 0.1 and fmeasure Group Fairness
+ > python3 main.py --fairness 0 --model_type XGB --test_size 0.1 --fmeasure grpfairness
+ 
+ For fairness processing with XGB model and test_size 0.1 and fmeasure Group Fairness
+ > python3 main.py --fairness 1 --model_type XGB --test_size 0.1 --fmeasure grpfairness
