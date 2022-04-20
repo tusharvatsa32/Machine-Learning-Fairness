@@ -20,6 +20,7 @@ def plotObjColumnDistribution(df : pd.DataFrame, nGraphShown : int, nGraphPerRow
 
     nGraphPerRow
         The number of graphs in each row.
+
     """
     print(f'=== Distribution of features with object values ===')
 
@@ -59,6 +60,7 @@ def plotNumColumnDistribution(df : pd.DataFrame, nGraphPerRow : int):
 
     nGraphPerRow
         The number of graphs in each row
+
     """
     print(f'=== Distribution of features with number values ===')
 
